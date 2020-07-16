@@ -17,6 +17,10 @@ mysql -p
 ```
 ## Build and run
 
+```bash
+sudo docker-compose up
+```
+
 With JDK11+
 ```bash
 mvn package
@@ -26,34 +30,19 @@ java -jar target/helidon-quickstart-mp.jar
 ## Exercise the application
 
 ```
-curl -X GET http://localhost:8080/greet
-{"message":"Hello World!"}
+curl -X GET http://localhost:8080/workout
+{
+    "name":"Generated Workout",
+    "exercises":["Pullups","Flutter Kicks","Lunge","Plank knees to elbows","Burpees","Single Arm Swings","Reverse Crunch","Pushups","Plank","Wide Pushups"]
+}
 
-curl -X GET http://localhost:8080/greet/Joe
-{"message":"Hello Joe!"}
-
-curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Hola"}' http://localhost:8080/greet/greeting
-
-curl -X GET http://localhost:8080/greet/Jose
-{"message":"Hola Jose!"}
+curl -X GET http://localhost:8080/workout?type=arms,back&limit=3
+{
+    "name":"Generated Workout",
+    "exercises":["Superman Hold","Curls","Rows"]
+}
 ```
 
-## Try health and metrics
-
-```
-curl -s -X GET http://localhost:8080/health
-{"outcome":"UP",...
-. . .
-
-# Prometheus Format
-curl -s -X GET http://localhost:8080/metrics
-# TYPE base:gc_g1_young_generation_count gauge
-. . .
-
-# JSON Format
-curl -H 'Accept: application/json' -X GET http://localhost:8080/metrics
-{"base":...
-. . .
 
 ```
 
