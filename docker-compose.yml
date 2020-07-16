@@ -1,0 +1,9 @@
+mysql:
+  image: mysql
+  container_name: mysql
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: tiger
+  volumes:
+    - ./docker/data:/docker-entrypoint-initdb.d
