@@ -67,7 +67,7 @@ CREATE TABLE `exercise_tag` (
 
 LOCK TABLES `exercise_tag` WRITE;
 /*!40000 ALTER TABLE `exercise_tag` DISABLE KEYS */;
-INSERT INTO `exercise_tag` VALUES (1,'Back'),(1,'Bodyweight'),(1,'Chest'),(2,'Back'),(2,'Bodyweight'),(3,'Bodyweight'),(3,'Dumbbell'),(3,'Kettlebell'),(3,'Legs'),(4,'Abdomial'),(4,'Bodyweight'),(5,'Bodyweight'),(5,'Dumbbell'),(5,'Kettlebell'),(5,'Legs'),(6,'Bodyweight'),(6,'Dumbbell'),(6,'Kettlebell'),(6,'Legs'),(7,'Abdominal'),(7,'Bodyweight'),(8,'Abdominal'),(8,'Bodyweight'),(9,'Abdominal'),(9,'Bodyweight'),(10,'Abdominal'),(10,'Bodyweight'),(11,'Bodyweight'),(12,'Abdominal'),(12,'Bodyweight'),(13,'Abdominal'),(13,'Bodyweight'),(14,'Arms'),(14,'Back'),(14,'Bodyweight'),(14,'Chest'),(15,'Back'),(15,'Bodyweight'),(16,'Arms'),(16,'Dumbbell'),(17,'Kettlebell'),(17,'Legs'),(18,'Arms'),(18,'Back'),(18,'Dumbbell'),(18,'Kettlebell'),(19,'Back'),(19,'Bodyweight'),(19,'Chest'),(20,'Kettlebell'),(20,'Legs'),(21,'Arms'),(21,'Chest'),(21,'Dumbbell'),(21,'Kettlebell'),(22,'Bodyweight'),(22,'Legs'),(23,'Abdominal'),(23,'Bodyweight'),(23,'Legs'),(24,'Bodyweight');
+INSERT INTO `exercise_tag` VALUES (1,'Back'),(1,'Bodyweight'),(1,'Chest'),(2,'Back'),(2,'Bodyweight'),(3,'Bodyweight'),(3,'Dumbbell'),(3,'Kettlebell'),(3,'Legs'),(4,'Abdominal'),(4,'Bodyweight'),(5,'Bodyweight'),(5,'Dumbbell'),(5,'Kettlebell'),(5,'Legs'),(6,'Bodyweight'),(6,'Dumbbell'),(6,'Kettlebell'),(6,'Legs'),(7,'Abdominal'),(7,'Bodyweight'),(8,'Abdominal'),(8,'Bodyweight'),(9,'Abdominal'),(9,'Bodyweight'),(10,'Abdominal'),(10,'Bodyweight'),(11,'Abdominal'),(11,'Bodyweight'),(12,'Abdominal'),(12,'Bodyweight'),(13,'Abdominal'),(13,'Bodyweight'),(14,'Arms'),(14,'Back'),(14,'Bodyweight'),(14,'Chest'),(15,'Back'),(15,'Bodyweight'),(16,'Arms'),(16,'Dumbbell'),(17,'Kettlebell'),(17,'Legs'),(18,'Arms'),(18,'Back'),(18,'Dumbbell'),(18,'Kettlebell'),(19,'Back'),(19,'Bodyweight'),(19,'Chest'),(20,'Kettlebell'),(20,'Legs'),(21,'Arms'),(21,'Chest'),(21,'Dumbbell'),(21,'Kettlebell'),(22,'Bodyweight'),(22,'Legs'),(23,'Abdominal'),(23,'Bodyweight'),(23,'Legs'),(24,'Bodyweight');
 /*!40000 ALTER TABLE `exercise_tag` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -80,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-13 13:06:23
+-- Dump completed on 2020-07-17 12:20:04

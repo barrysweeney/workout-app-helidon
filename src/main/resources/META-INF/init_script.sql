@@ -1,3 +1,7 @@
+CREATE DATABASE workout;
+
+USE workout;
+
 CREATE TABLE exercise (
     exercise_id INTEGER,
     name      VARCHAR(64),

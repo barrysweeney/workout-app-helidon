@@ -1,20 +1,8 @@
-# Helidon Quickstart MP
+# Random Workout Generator
 
-Sample Helidon MP project that includes multiple REST operations.
+Helidon MP project that includes REST operations to obtain exercises from a MySQL database.
 
-## Connect to MySQL
-```bash
-docker container run --rm -d -p 3306:3306 \
-    --env MYSQL_ROOT_PASSWORD=tiger \
-    --name mysql \
-    mysql:8
-```
 
-## Run MySQL commands inside container
-```bash
-docker exec -it mysql bash
-mysql -p
-```
 ## Build and run
 
 ```bash
@@ -41,9 +29,6 @@ curl -X GET http://localhost:8080/workout?type=arms,back&limit=3
     "name":"Generated Workout",
     "exercises":["Superman Hold","Curls","Rows"]
 }
-```
-
-
 ```
 
 ## Build the Docker Image
@@ -166,3 +151,36 @@ See the start script help:
 ```
 docker run --rm helidon-quickstart-mp-jlink:latest --help
 ```
+
+## Creating the database
+Steps taken to create workout database
+
+## Connect to MySQL
+```bash
+docker container run --rm -d -p 3306:3306 \
+    --env MYSQL_ROOT_PASSWORD=tiger \
+    --name mysql \
+    mysql:8
+```
+
+## Run MySQL commands inside container
+```bash
+docker exec -it mysql bash
+mysql -p
+```
+
+## Copy initialization script
+
+TODO: link to init_script.sql in repo
+
+## Create SQL dump
+
+```bash
+mysqldump -p --databases workout > dump.sql
+```
+
+## Move dump out of container
+```bash
+cat dump.sql
+```
+Copy and paste into `/docker/data/dump.sql`
