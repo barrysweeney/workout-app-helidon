@@ -2,6 +2,7 @@
 
 Helidon MP project that includes REST operations to obtain exercises from a MySQL database.
 
+[React frontend repository](https://github.com/barrysweeney/workout-app-react) and [live site](https://random-workout-generator.netlify.app/).
 
 ## Build and run
 
