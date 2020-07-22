@@ -2,6 +2,12 @@
 
 Helidon MP project that includes REST operations to obtain exercises from a MySQL database.
 
+## Set Environment variables
+Create a .env file and add passwords for the following variables
+```
+MYSQL_ROOT_PASSWORD=...
+SECURE_CONFIG_AES_MASTER_PWD=...
+```
 
 ## Build and run
 
@@ -40,7 +46,7 @@ Steps taken to create workout database
 ## Connect to MySQL
 ```bash
 docker container run --rm -d -p 3306:3306 \
-    --env MYSQL_ROOT_PASSWORD=tiger \
+    --env MYSQL_ROOT_PASSWORD=password \
     --name mysql \
     mysql:8
 ```
